@@ -1,0 +1,120 @@
+:root {
+  --color-primary: #377dff;
+  --color-accent: #000000;
+  --color-bg: #3a7cdf;
+  --color-surface: #ffffff;
+  --color-text: #000000;
+  --color-border: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--color-bg);
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* Layout */
+.container {
+  width: min(1000px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.section {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+/* Header */
+.site-header {
+  background: var(--color-primary);
+  color: white;
+  padding: 15px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+/* Базовий колір посилання — білий */
+.nav-list a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* При наведенні на посилання міняємо колір тільки тексту всередині span */
+.nav-list a:hover span {
+  color: var(--color-accent); /* стане чорним */
+}
+
+/* Щоб перехід був м'яким, додамо плавність (опціонально) */
+.nav-list a span {
+  transition: color 0.3s ease;
+}
+
+.active {
+  border-bottom: 2px solid rgb(245, 101, 233);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 15px;
+  background: #3176dd;
+  color: #ffffff;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+/* Form */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Flex */
+.two-column {
+  display: flex;
+  gap: 100px;
+}
+.two-column-gif {
+  display: flex;
+  gap: 20px;
+}
+.gif {
+  width: 300px;
+  height: auto;
+  margin-top: 75px;
+}
+
+img{
+  width: 200px;
+}
+
+.imgg{
+width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
