@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Контакти</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/contact.js"></script>
+    <script type="module" src="../js/ui.js"></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Контакти</h1>
+        <button class="menu-toggle">☰</button>
+
+        <ul class="nav-list">
+          <li><a href="../index.html">Головна</a></li>
+          <li><a href="../pages/about.html">Про мене</a></li>
+          <li><a href="../pages/contact.html">Контакти</a></li>
+        </ul>
+
+        <button class="theme-toggle">🌙</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section">
+        <h3>Телефонуй якщо що, через</h3>
+        <img
+          src="/assets/img/fuck-iphone-and-samsung-i-got-something-better-v0-1x2c5o65pwce1.webp"
+          alt="sans-sung"
+        />
+        <p>Якщо раптом немає Sans-Snug, заповнюй форму знизу &#9196;</p>
+        <h2>Форма</h2>
+
+        <form id="contact-form">
+          <label>Ім'я</label>
+          <input type="text" name="name" />
+          <div id="name-error" class="error"></div>
+
+          <label>Email</label>
+          <input type="email" name="email" />
+          <div id="email-error" class="error"></div>
+
+          <label>Повідомлення</label>
+          <textarea name="message" maxlength="200"></textarea>
+          <div id="message-error" class="error"></div>
+
+          <div class="char-count"></div>
+
+          <button type="submit">Надіслати</button>
+        </form>
+
+        <div id="result"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026</p>
+    </footer>
+  </body>
+</html>
