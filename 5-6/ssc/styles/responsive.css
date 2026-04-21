@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .two-column {
+    flex-direction: column;
+  }
+}
