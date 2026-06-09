@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторна робота</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Список користувачів</h1>
+
+      <button id="getUsersBtn">Get users</button>
+
+      <div class="controls hidden" id="controls">
+        <input type="text" id="searchInput" placeholder="Пошук..." />
+
+        <select id="cityFilter">
+          <option value="all">All cities</option>
+        </select>
+
+        <select id="sortSelect">
+          <option value="name">Сортувати за ім'ям</option>
+          <option value="username">Сортувати за username</option>
+          <option value="city">Сортувати за містом</option>
+          <option value="company">Сортувати за компанією</option>
+        </select>
+      </div>
+
+      <div id="loader" class="loader hidden">
+        <div class="spinner"></div>
+        <span>Loading...</span>
+      </div>
+
+      <div id="usersList" class="users-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
